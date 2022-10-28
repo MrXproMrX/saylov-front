@@ -152,6 +152,10 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
     }
+
+    .saylov_blogi__audeo{
+        grid-gap: 20px;
+    }
 }
 
 @media (max-width:1150px){
@@ -175,6 +179,11 @@
         font-size: 1.25rem;
     }
 
+    .saylov_blogi__audeo__title__h3{
+        font-size: 1rem;
+        max-height: 55px;
+    }
+
     .saylov_blogi__taxt{
         font-size: 0.875rem;
     }
@@ -182,8 +191,11 @@
     .saylov_blogi__item{
         margin-bottom: 30px;
     }
-}
 
+    .saylov_blogi__audeo{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (max-width:800px){
     .saylov_blogi__item{
@@ -198,5 +210,11 @@
 
     .saylov_blogi__title__h3 {
         font-size: 1.125rem;
+    }
+}
+
+@media (max-width:750px){
+    .saylov_blogi__audeo{
+        grid-template-columns: 1fr;
     }
 }
