@@ -1,0 +1,267 @@
+// Sertifikatlangan trenerlar start
+
+.sertifikatlangan_trenerlar{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        grid-gap: 20px;
+        background-color:$max;
+    }
+
+    &__form__input{
+        background-color:$link;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 18px 20px;
+        @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+
+        &::placeholder{
+            @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+            line-height: 10%;
+        }
+    }
+
+    &__list{
+        margin-top: 60px;
+
+        .sertifikatlangan_trenerlar__item + .sertifikatlangan_trenerlar__item{
+            margin-top: 50px;
+        }
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: 140px auto;
+        grid-gap: 30px;
+        padding: 20px;
+        align-items: center;
+        border: 1px solid $title;
+    }
+
+    &__form__button{
+        width: 60px;
+        height: 50px;
+        background-color:$blue;
+        @include fontAll(1.25rem,400,$title);
+    }
+
+    &__img{
+        @include fiximg(100%,140px,true);
+        img{
+            aspect-ratio: 1;
+            object-position: top center;
+        }
+    }
+
+    &__title_h3{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 125%;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        @include fontAll(1rem,400,$title);
+        line-height: 125%;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+
+    &__link{
+        background-color:$title;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        margin-right: -20px;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    }
+
+    &__link__button{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        height: 50px;
+        margin-bottom: -20px;
+    }
+
+    &__form__menu{
+        padding: 50px;
+        background-color:$max;
+        display: grid;
+        grid-template-columns: 1fr 1fr 60px;
+        grid-gap: 20px;
+    }
+
+    &__select{
+        background-color:$link;
+        @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 18px 20px;
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px 15px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    &__contact__link{
+        @include fontAll(0.875rem,700,$title);
+        line-height: 125%;
+        span{
+            color:$blue;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__title_h4{
+        @include fontAll(1rem,500,$blue);
+        line-height: 125%;
+        margin-bottom: 10px;
+    }
+
+    .red{
+        .sertifikatlangan_trenerlar__title_h4{
+            color:$red;
+        }
+
+        .sertifikatlangan_trenerlar__form{
+            background-color:rgba(168, 18, 85, 0.1);
+        }
+
+        .sertifikatlangan_trenerlar__form__button{
+            background-color:$red;
+            color:$link;
+        }
+    }
+}
+
+// Sertifikatlangan trenerlar end
+
+
+.saylovchilar_uchun__item{
+    .sertifikatlangan_trenerlar__text{
+        max-height: 103px;
+        -webkit-line-clamp: 5;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+
+@media (max-width:1150px){
+    .sertifikatlangan_trenerlar__list{
+        margin-top: 40px;
+    }
+
+    .sertifikatlangan_trenerlar__title_h3 {
+         font-size: 1rem;
+    }
+
+    .saylovchilar_uchun__item .sertifikatlangan_trenerlar__text {
+        font-size: 0.875rem;
+        max-height: 76px;
+    }
+
+    .sertifikatlangan_trenerlar__title_h4{
+        font-size: 0.875rem;
+    }
+
+    .sertifikatlangan_trenerlar__item {
+        padding: 15px;
+    }
+
+    .sertifikatlangan_trenerlar__list .sertifikatlangan_trenerlar__item + .sertifikatlangan_trenerlar__item {
+        margin-top: 30px;
+    }
+
+    .sertifikatlangan_trenerlar__form {
+        padding: 20px;
+        grid-gap: 0;
+    }
+
+    .sertifikatlangan_trenerlar__form__menu{
+        padding: 20px;
+    }
+
+    .sertifikatlangan_trenerlar__link{
+        margin-right: -15px;
+    }
+
+    .sertifikatlangan_trenerlar__link__button{
+        margin-bottom: -15px;
+    }
+
+    .saylovchilar_uchun__item .sertifikatlangan_trenerlar__text{
+        max-height: 152px;
+        -webkit-line-clamp: 10;
+        position: relative;
+        display: inline-block;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+@media (max-width:800px){
+    .sertifikatlangan_trenerlar__form__menu{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:530px){
+    .sertifikatlangan_trenerlar__img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .sertifikatlangan_trenerlar__item{
+        grid-template-columns: auto;
+        display: block;
+    }
+
+    .sertifikatlangan_trenerlar__img{
+        width: 100px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    .sertifikatlangan_trenerlar__img{
+        float: inherit;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .sertifikatlangan_trenerlar__form,
+    .sertifikatlangan_trenerlar__form__menu{
+        padding: 15px;
+    }
+}

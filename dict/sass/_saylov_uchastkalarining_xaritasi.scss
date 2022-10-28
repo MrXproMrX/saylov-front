@@ -1,0 +1,99 @@
+// saylov_uchastkalarining_xaritasi start
+
+.saylov_uchastkalarining_xaritasi{
+    position: relative;
+    &__select{
+        background-color:$max;
+        @include fontAll(1rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 0 20px;
+    }
+
+    &__list{
+        form{
+            display: grid;
+            grid-gap: 20px;
+            align-items: center;
+            grid-template-columns: 370px 370px 370px auto;
+            justify-items: stretch;
+        }
+    }
+
+    &__button{
+        background-color:$blue;
+        padding: 18px 40px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#58d2ee;
+        }
+    }
+
+    &__map{
+        margin-top: 30px;
+        iframe{
+            height: 600px;
+            width: 100%;
+        }
+    }
+}
+
+// saylov_uchastkalarining_xaritasi end
+
+
+@media (max-width:1440px){
+    .saylov_uchastkalarining_xaritasi__list form{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width:1150px){
+    .saylov_uchastkalarining_xaritasi__map iframe {
+        height: 500px;
+        width: 100%;
+    }
+
+    .saylov_uchastkalarining_xaritasi__map{
+        margin-top: 20px;
+    }
+
+    .saylov_uchastkalarining_xaritasi__list form{
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width:900px){
+    .saylov_uchastkalarining_xaritasi__map iframe {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .saylov_uchastkalarining_xaritasi__select {
+        height: 40px;
+    }
+
+    .saylov_uchastkalarining_xaritasi__button {
+        padding: 13px 20px;
+    }
+}
+
+@media (max-width:600px){
+    .saylov_uchastkalarining_xaritasi__map iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width:500px){
+    .saylov_uchastkalarining_xaritasi__map iframe {
+        height: 300px;
+    }
+}

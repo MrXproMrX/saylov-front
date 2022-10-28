@@ -1,0 +1,95 @@
+// prezidenti_saylovlari start
+
+.prezidenti_saylovlari{
+    position: relative;
+    margin-bottom: 60px;
+    &__item{
+        border: 1px solid $title;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__title__h2{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 130%;
+        margin-bottom: 15px;
+    }
+
+    &__title__h3{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+
+    &__link{
+        background-color:$blue;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$title);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#58d2ee;
+        }
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+
+// prezidenti_saylovlari end
+
+
+@media (max-width:1150px){
+    .prezidenti_saylovlari__list{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .prezidenti_saylovlari__item{
+        padding: 20px;
+    }
+
+    .prezidenti_saylovlari__title__h2{
+        margin-bottom: 10px;
+        font-size: 1.375rem;
+    }
+
+    .prezidenti_saylovlari__title__h3{
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:900px){
+    .prezidenti_saylovlari__title__h2{
+        font-size: 1.25rem;
+    }
+
+    .prezidenti_saylovlari__title__h3{
+        font-size: 0.875rem;
+    }
+
+    .prezidenti_saylovlari__list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px){
+    .prezidenti_saylovlari__list{
+        grid-template-columns: 1fr;
+    }
+
+    .prezidenti_saylovlari__title__h2{
+        font-size: 1.125rem;
+    }
+}

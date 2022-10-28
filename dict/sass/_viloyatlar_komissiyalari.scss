@@ -1,0 +1,119 @@
+// viloyatlar_komissiyalari start
+
+.viloyatlar_komissiyalari{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__item{
+        border: 1px solid $title;
+        padding: 20px 30px;
+        @extend%transition;
+
+        &:hover{
+            border: 1px solid $blue;
+        }
+    }
+
+    &__title__h3{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 130%;
+    }
+
+    &__link{
+        @include fontAll(1.375rem,400,$title);
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @extend%transition;
+    }
+
+    &__contacts{
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+        margin-top: 60px
+    }
+
+    &__contacts__link{
+        @include fontAll(1.25rem,400,$title);
+        line-height: 100%;
+        span{
+            color:$blue;
+            margin-right: 5px;
+        }
+    }
+}
+
+.viloyatlar_komissiyalari__item:hover > .viloyatlar_komissiyalari__link{
+    color:$blue;
+}
+
+// viloyatlar_komissiyalari end
+
+@media (max-width:1150px){
+    .viloyatlar_komissiyalari__list{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .viloyatlar_komissiyalari__title__h3 {
+        font-size: 1.375rem;
+    }
+
+    .viloyatlar_komissiyalari__link{
+        font-size: 1.25rem;
+    }
+
+    .viloyatlar_komissiyalari__contacts__link{
+        font-size: 1.125rem;
+    }
+
+    .viloyatlar_komissiyalari__contacts{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:750px){
+    .viloyatlar_komissiyalari__list{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .viloyatlar_komissiyalari__title__h3 {
+        font-size: 1.25rem;
+    }
+
+    .viloyatlar_komissiyalari__link{
+        font-size: 1.125rem;
+    }
+
+    .viloyatlar_komissiyalari__contacts__link{
+        font-size: 1rem;
+    }
+
+    .viloyatlar_komissiyalari__contacts{
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width:550px){
+    .viloyatlar_komissiyalari__title__h3 {
+        font-size: 1.125rem;
+    }
+
+    .viloyatlar_komissiyalari__link{
+        font-size: 1rem;
+    }
+
+    .viloyatlar_komissiyalari__contacts{
+        grid-gap: 15px;
+    }
+}

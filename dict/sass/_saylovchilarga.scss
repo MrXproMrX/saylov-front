@@ -1,0 +1,115 @@
+
+// Saylovchilarga start
+
+.saylovchilarga{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__link{
+        border: 1px solid $title;
+        padding: 20px 30px;
+        position: relative;
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    &__title__h2{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 130%;
+    }
+
+    &__title__h4{
+        @include fontAll(1.25rem,100,$title);
+        line-height: 100%;
+        position: absolute;
+        bottom: 20px;
+        right: 25px;
+    }
+}
+
+// Saylovchilarga end
+
+
+@media (max-width:1150px){
+    .saylovchilarga__title__h2 {
+        font-size: 1.375rem;
+    }
+
+    .saylovchilarga__title__h4 {
+        font-size: 1.125rem;
+    }
+
+    .saylovchilarga__link {
+        padding: 15px 25px;
+    }
+
+    .saylovchilarga__title__h4{
+        bottom: 15px;
+        right: 20px;
+    }
+}
+
+
+@media (max-width:950px){
+    .saylovchilarga__title__h2 {
+        font-size: 1.25rem;
+    }
+
+    .saylovchilarga__title__h4 {
+        font-size: 1rem;
+    }
+
+    .saylovchilarga__link {
+        padding: 10px 20px;
+    }
+
+    .saylovchilarga__list{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .saylovchilarga__title__h4{
+        bottom: 10px;
+        right: 15px;
+    }
+}
+
+
+@media (max-width:600px){
+    .saylovchilarga__title__h2 {
+        font-size: 1.125rem;
+    }
+
+    .saylovchilarga__title__h4 {
+        font-size: 0.875rem;
+    }
+
+    .saylovchilarga__link {
+        padding: 10px 15px;
+    }
+
+    .saylovchilarga__list{
+        grid-template-columns: 1fr;
+    }
+
+    .saylovchilarga__title__h4{
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+
+@media (max-width:500px){
+    .saylovchilarga__title__h2 {
+        font-size: 1rem;
+    }
+}

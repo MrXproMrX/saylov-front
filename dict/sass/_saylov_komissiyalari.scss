@@ -1,0 +1,49 @@
+// saylov_komissiyalari_in start
+
+.saylov_komissiyalari_in{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__img{
+        @include fiximg(100%,auto,true);
+        max-height: 600px;
+        margin-bottom: 50px;
+    }
+
+    &__download__link{
+        @include fontAll(1rem,400,$title);
+        line-height: 125%;
+        @extend%transition;
+        display: flex;
+        align-items: flex-start;
+        span{
+            margin-right: 10px;
+            color:$blue;
+        }
+
+        &:hover{
+            color:$blue;
+        }
+    }
+
+
+    &__download{
+        margin-top: 30px;
+        li+li{
+            margin-top: 20px;
+        }
+    }
+}
+
+// saylov_komissiyalari_in end
+
+
+@media (max-width:1150px){
+    .saylov_komissiyalari_in__download__link {
+        font-size: 0.875rem;
+    }
+
+    .saylov_komissiyalari_in__download{
+        margin-top: 30px;
+    }
+}

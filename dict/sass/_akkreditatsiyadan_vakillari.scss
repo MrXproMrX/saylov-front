@@ -1,0 +1,99 @@
+// Akkreditatsiyadan o'tkazilgan OAV vakillari start
+
+.akkreditatsiyadan_vakillari{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+        padding-bottom: 20px;
+        table{
+            width: 100%;
+            tr{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                text-align: left;
+
+                th{
+                    @include fontAll(1.125rem,700,$title);
+                    line-height: 125%;
+                    margin: 20px 0;
+                    padding: 12px 20px;
+                    border:none;
+                }
+
+                td{
+                    @include fontAll(1rem,400,$title);
+                    line-height: 125%;
+                    padding: 12px 20px;
+                }
+                
+
+                td{
+                    border-left:1px solid $title;
+                    border-bottom:1px solid $title;
+                    border-top:1px solid $title;
+                }
+
+                td+td{
+                    border-left: none;
+                }
+
+                td:nth-last-child(1){
+                    border-right:1px solid $title;
+                }
+            }
+        }
+    }
+
+    .about_contint_in__text{
+        margin-bottom: 15px;
+    }
+}
+
+
+// Akkreditatsiyadan o'tkazilgan OAV vakillari end
+
+
+@media (max-width:1440px){
+
+    .akkreditatsiyadan_vakillari__list{
+        overflow-x: scroll;
+    }
+
+    .akkreditatsiyadan_vakillari__list table {
+        width: 1320px;
+    }
+
+    .akkreditatsiyadan_vakillari__list::-webkit-scrollbar {
+        width: 8px;
+        height: 4px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .akkreditatsiyadan_vakillari__list::-webkit-scrollbar-track {
+        background: $max;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .akkreditatsiyadan_vakillari__list::-webkit-scrollbar-thumb {
+        background: $title;
+        height: 4px;
+        border-radius: 50px;
+    }
+   
+}
+
+@media (max-width:1150px){
+    .akkreditatsiyadan_vakillari__list table tr th {
+        margin: 0;
+    }
+}

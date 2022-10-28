@@ -1,0 +1,189 @@
+// MSK Qarorlari start
+
+.msk_qarorlari{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__from{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 20px;
+        padding: 50px;
+        background-color:$max;
+    }
+
+    &__from__input{
+        background-color:$link;
+        width: 560px;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 18px 20px;
+        @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+
+        &::placeholder{
+            @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+            line-height: 10%;
+        }
+    }
+
+    &__select{
+        background-color:$link;
+        @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+        width: 240px;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 18px 20px;
+    }
+
+    &__from__button{
+        width: 60px;
+        height: 50px;
+        background-color:$blue;
+        @include fontAll(1.25rem,400,$title);
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-top: 60px;
+
+        .red{
+            &:hover{
+                border: 1px solid $red;
+                .msk_qarorlari__title__h5{
+                    color:$red;
+                }
+            }
+        }
+    }
+
+    &__item{
+        border: 1px solid $title;
+        padding: 20px 30px;
+        position: relative;
+        @extend%transition;
+
+        &:hover{
+            border: 1px solid $blue;
+            .msk_qarorlari__title__h5{
+                color:$blue;
+            }
+        }
+    }
+
+
+    &__title__h3{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 130%;
+        margin-bottom: 20px;
+
+        max-height: 155px;
+        -webkit-line-clamp: 5;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    &__title__h4{
+        @include fontAll(0.75rem,400,$title);
+        line-height: 110%;
+    }
+
+    &__item__cart{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        span{
+            margin-right: 2px;
+        }
+    }
+
+    &__title__h5{
+        @include fontAll(1.125rem,400,$title);
+        line-height: 110%;
+        position: absolute;
+        @extend%transition;
+        bottom: 20px;
+        right: 30px;
+    }
+}
+
+// MSK Qarorlari end
+
+@media (max-width:1400px){
+    .msk_qarorlari__from {
+        padding: 30px;
+    }
+}
+
+@media (max-width:1150px){
+    .msk_qarorlari__title__h3{
+        font-size: 1.375rem;
+    }
+
+    .msk_qarorlari__title__h5 {
+        font-size: 1rem;
+    }
+
+    .msk_qarorlari__item {
+        padding: 15px 20px;
+    }
+
+    .msk_qarorlari__list{
+        margin-top: 40px;
+    }
+
+    .msk_qarorlari__from{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .msk_qarorlari__from__input,
+    .msk_qarorlari__select{
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px){
+    .msk_qarorlari__list{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .msk_qarorlari__list{
+        margin-top: 30px;
+    }
+
+    .msk_qarorlari__title__h3 {
+        font-size: 1.125rem;
+    }
+
+    .msk_qarorlari__title__h5 {
+        right: 20px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width:650px){
+    .msk_qarorlari__list{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .msk_qarorlari__from {
+        padding: 20px;
+    }
+
+    .msk_qarorlari__list{
+        margin-top: 30px;
+    }
+}

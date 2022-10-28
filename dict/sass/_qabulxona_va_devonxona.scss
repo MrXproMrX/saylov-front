@@ -1,0 +1,142 @@
+// qabulxona_va_devonxona start
+
+.qabulxona_va_devonxona{
+    position: relative;
+    margin-top: 60px;
+    border-bottom:1px solid $title;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-gap: 30px;
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-gap: 20px;
+        align-items: center;
+        border: 1px solid $title;
+        padding: 20px;
+    }
+
+    &__title__h2{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 125%;
+        margin-bottom: 10px;
+    }
+
+    &__data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        li{
+            @include fontAll(1rem,400,$title);
+            line-height: 125%;
+        }
+    }
+
+    &__img{
+        @include fiximg(150px,150px,true);
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    &__title__h3{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+
+    &__link{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+}
+
+// qabulxona_va_devonxona end
+
+
+@media (max-width:1150px){
+    .qabulxona_va_devonxona__title__h2{
+        font-size: 1rem;
+    }
+
+    .qabulxona_va_devonxona__data li{
+        font-size: 0.875rem;
+    }
+
+    .qabulxona_va_devonxona__item {
+        grid-gap: 15px;
+    }
+
+    .qabulxona_va_devonxona{
+        margin-top: 40px;
+    }
+
+    .qabulxona_va_devonxona__title__h3,
+    .qabulxona_va_devonxona__link{
+        font-size: 1.375rem;
+    }
+
+    .qabulxona_va_devonxona__list {
+        grid-gap: 20px;
+        grid-template-columns: 48% 48%;
+    }
+}
+
+@media (max-width:1050px){
+    .qabulxona_va_devonxona__list {
+        grid-gap: 20px;
+        grid-template-columns: auto;
+    }
+
+    .qabulxona_va_devonxona__title__h3,
+    .qabulxona_va_devonxona__link{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:750px){
+    .qabulxona_va_devonxona__title__h3,
+    .qabulxona_va_devonxona__link{
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width:550px){
+    .qabulxona_va_devonxona__data{
+        grid-template-columns: auto;
+    }
+
+    .qabulxona_va_devonxona__img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qabulxona_va_devonxona__item{
+        grid-template-columns: 120px auto;
+    }
+
+    .qabulxona_va_devonxona__title__h3,
+    .qabulxona_va_devonxona__link{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:400px){
+    .qabulxona_va_devonxona__item{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+}

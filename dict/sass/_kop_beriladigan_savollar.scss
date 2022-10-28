@@ -1,0 +1,117 @@
+// Ko'p beriladigan savollar start
+
+.kop_beriladigan_savollar{
+    margin-bottom: 60px;
+    position: relative;
+
+    &__list{
+        li+li{
+            margin-top: 30px;
+        }
+    }
+
+    &__title__h2{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 125%;
+        display: grid;
+        grid-template-columns: 40px auto 20px;
+        align-items: center;
+        grid-gap: 10px;
+        width: 100%;
+        border-left:5px solid $blue;
+        background-color:$max;
+        padding: 15px;
+        cursor: pointer;
+        span{
+            @include fontAll(2.5rem,700,$blue);
+            line-height: 100%;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        span+span{
+            @include fontAll(1.125rem,700,$blue);
+            line-height: 100%;
+            @extend%transition;
+        }
+    }
+
+    &__text{
+        @include fontAll(1rem,400,$title);
+        line-height: 130%;
+        display: grid;
+        grid-template-columns: 40px auto;
+        align-items: flex-start;
+        grid-gap: 10px;
+        width: 100%;
+        width: 0;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        border-bottom:1px solid $title;
+        span{
+            @include fontAll(2.5rem,700,$max);
+            line-height: 100%;
+        }
+    }
+
+    &__active{
+        .kop_beriladigan_savollar__text{
+            padding: 20px;
+            width: 100%;
+            opacity: 1;
+            height: auto;
+            overflow: inherit;
+        }
+
+        .kop_beriladigan_savollar__title__h2{
+            span+span{
+                transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            color:$blue;
+            }
+        }
+    }
+}
+
+// Ko'p beriladigan savollar end
+
+
+@media (max-width:1150px){
+    .kop_beriladigan_savollar__title__h2,
+    .kop_beriladigan_savollar__title__h2 span + span{
+        font-size: 1rem;
+    }
+
+    .kop_beriladigan_savollar__title__h2{
+        grid-template-columns:25px auto 15px;
+    }
+
+    .kop_beriladigan_savollar__text{
+        font-size: 0.875rem;
+        grid-template-columns:25px auto;
+    }
+
+    .kop_beriladigan_savollar__title__h2 span,
+    .kop_beriladigan_savollar__text span{
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width:800px){
+    .kop_beriladigan_savollar__active .kop_beriladigan_savollar__text {
+        padding: 15px;
+    }
+
+    .kop_beriladigan_savollar__text,
+    .kop_beriladigan_savollar__title__h2{
+        grid-gap: 10px;
+    }
+
+    .kop_beriladigan_savollar__list li + li {
+        margin-top: 20px;
+    }
+}

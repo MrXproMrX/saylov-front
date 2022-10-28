@@ -1,0 +1,83 @@
+// Okrug saylov komissiyalari start
+
+.okrug_komissiyalari{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__item{
+        border: 1px solid $title;
+        padding: 30px 40px;
+    }
+
+    &__title__h2{
+        @include fontAll(1.5rem,700,$title);
+        line-height: 125%;
+        text-transform:uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__link{
+        @include fontAll(0.875rem,700,$title);
+        line-height: 150%;
+        span{
+            color:$blue;
+            margin-right: 5px;
+        }
+
+        span+span{
+            color:$title;
+            font-weight: 400;
+            margin-right: 5px;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 15px;
+    }
+
+    &__list{
+        .okrug_komissiyalari__item + .okrug_komissiyalari__item{
+            margin-top: 30px;
+        }
+    }
+
+    &__cart{
+        form{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// Okrug saylov komissiyalari end
+
+
+@media (max-width:1150px){
+    .okrug_komissiyalari__title__h2{
+        font-size: 1.375rem;
+    }
+
+    .okrug_komissiyalari__item{
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width:1000px){
+    .okrug_komissiyalari__title__h2{
+        font-size: 1.25rem;
+    }
+
+    .okrug_komissiyalari__item{
+        padding: 20px 15px;
+    }
+    .okrug_komissiyalari__list .okrug_komissiyalari__item + .okrug_komissiyalari__item{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:700px){
+    .okrug_komissiyalari__title__h2{
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,209 @@
+// leadership start
+
+.leadership{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list__item{
+        border: 1px solid $title;
+        width: 100%;
+        height: auto;
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: 300px auto;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-gap: 60px;
+        padding-right: 20px;
+    }
+
+    .about_contint_in__text{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding-left: 50px;
+        padding-right: 50px;
+        @extend%transition;
+    }
+
+    &__img{
+       @include fiximg(300px,100%,true);
+       img{
+          aspect-ratio: 1;
+          min-width: 300px;
+          height: 100%;
+       }
+    }
+
+    &__title__h2{
+        @include fontAll(1.5rem,700,$title);
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        line-height: 120%;
+    }
+
+    &__title__h4{
+        @include fontAll(1.125rem,400,$blue);
+        line-height: 120%;
+        margin-bottom: 15px;
+    }
+
+    &__button{
+        background-color: $blue;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$title);
+        line-height: 100%;
+        span{
+            margin-left: 5px;
+            display: inline-block;
+            @extend%transition;
+        }
+
+        &:hover{
+            background-color:$title;
+            color:$link;
+        }
+    }
+
+    &__active{
+        .about_contint_in__text {
+            width: auto;
+            height: auto;
+            opacity: 1;
+            overflow: inherit;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .leadership__button{
+            background-color:$title;
+            color:$link;
+            span{
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        }
+
+    }
+
+    &__list{
+        .leadership__list__item+.leadership__list__item{
+            margin-top: 50px;
+        }
+
+        .green{
+            .leadership__button {
+                background-color:$green;
+                color:$link;
+            }
+
+            .leadership__title__h4{
+                color:$maxin;
+            }
+        }
+
+        .red{
+            .leadership__button {
+                background-color:$red;
+                color:$link;
+            }
+
+            .leadership__title__h4{
+                color:$red;
+            }
+        }
+    }
+}
+
+// leadership end
+
+
+@media (max-width:1000px){
+    .leadership__title__h2 {
+        font-size: 1.375rem;
+    }
+
+    .leadership__title__h4 {
+        font-size: 1rem;
+    }
+
+    .leadership__img{
+        width: 250px;
+    }
+
+    .leadership__img img {
+        min-width: 250px;
+    }
+
+    .leadership__item{
+        grid-template-columns: 250px auto;
+        grid-gap: 40px;
+    }
+}
+
+@media (max-width:750px){
+    .leadership__title__h2 {
+        font-size: 1.25rem;
+    }
+
+    .leadership__title__h4 {
+        font-size: 0.875rem;
+    }
+
+    .leadership__img{
+        width: 200px;
+    }
+
+    .leadership__img img {
+        min-width: 200px;
+    }
+
+    .leadership__item{
+        grid-template-columns: 200px auto;
+        grid-gap: 40px;
+    }
+
+    .leadership__active .about_contint_in__text{
+        padding: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .leadership__title__h2 {
+        font-size: 1.125rem;
+    }
+
+    .leadership__item{
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
+    .leadership__img{
+        width: 100%;
+    }
+
+    .leadership__img img {
+        min-width: auto;
+    }
+
+    .leadership__item{
+        padding: 0;
+    }
+
+    .leadership__cart{
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .leadership__active .about_contint_in__text {
+        padding: 20px;
+    }
+}

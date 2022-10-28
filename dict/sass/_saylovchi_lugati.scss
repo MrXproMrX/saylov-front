@@ -1,0 +1,72 @@
+// Saylovchi lug'ati start start
+
+.saylovchi_lugati{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__title{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 125%;
+        padding: 20px 0;
+        border-bottom:1px solid $title;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 10px;
+        cursor: pointer;
+        span{
+            color:$blue;
+            margin-right: 5px;
+            cursor: pointer;
+            @extend%transition;
+        }
+    }
+
+    &__text{
+        @include fontAll(1rem,400,$title);
+        line-height: 130%;
+        width: 0;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        @extend%transition;
+    }
+
+    &__active{
+        .saylovchi_lugati__text{
+            width: 100%;
+            opacity: 1;
+            height: auto;
+            overflow: inherit;
+            padding-top: 20px;
+        }
+
+        .saylovchi_lugati__title{
+            span{
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+// Saylovchi lug'ati start end
+
+
+@media (max-width:1150px){
+    .saylovchi_lugati__title{
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+    .saylovchi_lugati__text{
+        font-size: 0.875rem;
+    }
+
+    .saylovchi_lugati__active .saylovchi_lugati__text {
+        padding-top: 15px;
+    }
+}

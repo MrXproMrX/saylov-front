@@ -1,0 +1,94 @@
+// Siyosiy partiyalar start
+
+.siyosiy_partiyalar{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__item{
+        border: 1px solid $title;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        @include fiximg(200px,200px,true);
+        margin-bottom: 20px;
+        img{
+            object-position: center center;
+            border-radius:50%;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            -ms-border-radius:50%;
+            -o-border-radius:50%;
+        }
+    }
+
+    &__title__h2{
+        @include fontAll(1.125rem,700,$title);
+        line-height: 125%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__link{
+        background-color:$title;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    }
+}
+
+// Siyosiy partiyalar end
+
+@media (max-width:1150px){
+    .siyosiy_partiyalar__title__h2{
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .siyosiy_partiyalar__img{
+        margin-bottom: 15px;
+    }
+
+    .siyosiy_partiyalar__item {
+        padding: 15px;
+    }
+
+    .siyosiy_partiyalar__list{
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width:1050px){
+    .siyosiy_partiyalar__list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:700px){
+    .siyosiy_partiyalar__list{
+        grid-template-columns: 1fr;
+    }
+
+    .siyosiy_partiyalar__img{
+        width: 180px;
+        height: 180px;
+    }
+}

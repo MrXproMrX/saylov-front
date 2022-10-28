@@ -1,0 +1,46 @@
+// elektron_kullanmalar start
+
+.elektron_kullanmalar{
+    position: relative;
+
+    &__menu{
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        grid-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__link{
+        background-color:$max;
+        padding: 20px 15px;
+        @include fontAll(1.125rem,400,$title);
+        display: inline-block;
+        @extend%transition;
+
+        &:hover{
+            background-color:$title;
+            color:$link;
+        }
+    }
+
+    &__active{
+        background-color:$title;
+        color:$link;
+    }
+}
+
+// elektron_kullanmalar end
+
+@media (max-width:1000px){
+    .elektron_kullanmalar__link{
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:650px){
+    .elektron_kullanmalar__link{
+        font-size: 0.875rem;
+    }
+}

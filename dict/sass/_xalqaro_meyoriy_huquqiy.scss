@@ -1,0 +1,83 @@
+// xalqaro_meyoriy_huquqiy start
+
+.xalqaro_meyoriy_huquqiy{
+    margin-bottom: 60px;
+    position: relative;
+
+    &__item{
+        border: 1px solid #003057;
+        padding: 25px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    &__title_h2{
+        @include fontAll(18px,700,$title);
+        line-height: 130%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__link{
+        background-color:$title;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    }
+}
+
+// xalqaro_meyoriy_huquqiy end
+
+
+@media (max-width:1150px){
+    .xalqaro_meyoriy_huquqiy__title_h2{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .xalqaro_meyoriy_huquqiy__item{
+        padding: 15px 20px;
+    }
+}
+
+
+@media (max-width:1000px){
+    .xalqaro_meyoriy_huquqiy__list{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+@media (max-width:750px){
+    .xalqaro_meyoriy_huquqiy__list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .xalqaro_meyoriy_huquqiy__title_h2{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width:550px){
+    .xalqaro_meyoriy_huquqiy__list{
+        grid-template-columns: 1fr;
+    }
+}

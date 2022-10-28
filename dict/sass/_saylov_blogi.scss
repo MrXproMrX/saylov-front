@@ -1,0 +1,202 @@
+// Saylov blogi start
+
+.saylov_blogi{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+        align-items: center;
+        border: 1px solid $title;
+        padding-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__img{
+        @include fiximg(600px,100%,true);
+        min-height: 450px;
+    }
+
+    &__data__h4{
+        @include fontAll(0.75rem,400,$title);
+        line-height: 100%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &__title__h3{
+        @include fontAll(1.375rem,700,$title);
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+
+    &__taxt{
+        @include fontAll(1rem,400,$title);
+        line-height: 150%;
+        padding-right: 10px;
+        max-height: 190px;
+        overflow-y: scroll;
+    }
+
+    &__link{
+        background-color:$title;
+        margin-top: 20px;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        margin-bottom: 10px;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    }
+
+    &__audeo__cart{
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+    &__audeo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        li{
+            position: relative;
+            padding: 30px;
+            border:1px solid $title;
+            a{
+                display: grid;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                grid-template-columns: 60px auto;
+                grid-gap: 20px;
+            }
+        }
+    }
+
+    &__audeo__title__h3{
+        @include fontAll(1.25rem,700,$title);
+        line-height: 130%;
+
+        max-height: 75px;
+        -webkit-line-clamp: 3;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar-track {
+    background: $max;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar-thumb {
+    background: $title;
+    height: 4px;
+    border-radius: 50px;
+}
+
+// Saylov blogi end
+
+
+// saylov_blogi_in start
+
+.saylov_blogi_in{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__item{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 60px auto;
+        border: 1px solid $title;
+        grid-gap: 15px;
+        padding: 20px;
+    }
+}
+
+// saylov_blogi_in end
+
+@media (max-width:1300px){
+    .saylov_blogi__img{
+        width: 100%;
+    }
+
+    .saylov_blogi__item{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+@media (max-width:1150px){
+    .saylov_blogi_in__item{
+        padding: 15px;
+        grid-gap: 10px;
+    }
+
+    .saylov_blogi__img{
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .saylov_blogi__item{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .saylov_blogi__title__h3 {
+        font-size: 1.25rem;
+    }
+
+    .saylov_blogi__taxt{
+        font-size: 0.875rem;
+    }
+
+    .saylov_blogi__item{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width:800px){
+    .saylov_blogi__item{
+        grid-template-columns: auto;
+        padding: 0;
+        grid-gap: 10px;
+    }
+
+    .saylov_blogi__text_item{
+        padding: 15px;
+    }
+
+    .saylov_blogi__title__h3 {
+        font-size: 1.125rem;
+    }
+}

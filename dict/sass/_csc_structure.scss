@@ -1,0 +1,21 @@
+// CEC structure start
+
+.csc_structure{
+    margin-bottom: 60px;
+    position: relative;
+
+    &__cart__img{
+        @include fiximg(100%,1222px,false);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// CEC structure end
+
+@media (max-width:1440px){
+    .csc_structure__cart__img{
+        height: auto;
+    }
+}

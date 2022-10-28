@@ -1,0 +1,170 @@
+// mskga_elektron_murojaat start
+
+.mskga_elektron_murojaat{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    &__title__h4{
+        @include fontAll(16px,400,$title);
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+
+    &__button__cart{
+        background-color:$blue;
+        padding: 18px 40px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        text-align: center;
+        span{
+            margin-left: 5px;
+        } 
+
+        &:hover{
+            background-color:#58d2ee;
+        }
+    }
+
+    &__form{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-gap: 20px;
+        justify-items: stretch;
+        label{
+            display: flex;
+            grid-gap: 10px;
+            flex-direction: column;
+            span{
+                @include fontAll(1rem,400,$title);
+                line-height: 135%;
+            }
+        }
+    }
+
+    &__file{
+        display: none;
+    }
+
+    &__file__title{
+        padding: 18px 20px;
+        background-color:$title;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        text-align: center;
+        @include fontAll(1rem,400,$link);
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__input{
+        background-color:$max;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border:none;
+        padding: 18px 20px;
+        @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+        line-height: 120%;
+
+        &::placeholder{
+            @include fontAll(0.875rem,400,rgba(0, 48, 87, 0.5));
+            line-height: 10%;
+        }
+    }
+
+    &__button{
+        background-color:$blue;
+        margin-top: 20px;
+        min-width: 300px;
+        padding: 18px 40px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#58d2ee;
+        }
+    }
+}
+
+// mskga_elektron_murojaat end
+
+
+@media (max-width:1350px){
+    .mskga_elektron_murojaat__menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+@media (max-width:1150px){
+    .mskga_elektron_murojaat__form label span,
+    .mskga_elektron_murojaat__file__title{
+        font-size: 0.875rem;
+    }
+
+    .mskga_elektron_murojaat__form {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1000px){
+    .mskga_elektron_murojaat__menu{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .mskga_elektron_murojaat__form{
+        margin-bottom: 15px;
+    }
+
+    .mskga_elektron_murojaat__button{
+        margin-top: 15px;
+    }
+
+    .mskga_elektron_murojaat__form{
+        grid-gap: 15px;
+    }
+}
+
+
+@media (max-width:750px){
+    .mskga_elektron_murojaat__form{
+        grid-template-columns: auto;
+    }
+
+    .mskga_elektron_murojaat__input,
+    .mskga_elektron_murojaat__file__title{
+        height: 40px;
+        padding:13px 15px;
+    }
+
+    .mskga_elektron_murojaat__menu{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width:650px){
+    .mskga_elektron_murojaat__menu{
+        grid-template-columns: auto;
+    }
+}
