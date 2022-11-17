@@ -738,7 +738,7 @@
                 <h2 class="election__title__h2">Elonlar</h2>
 
                 <div class="ads__list">
-                    <section>
+                    <section class="ads__calendar__event_calendar">
 
                         <div class="ads__calendar">
                                 
@@ -764,11 +764,13 @@
                         
                     </section>
 
+                    <h3 class="ads__event__title__h3">На сегодня нет запланированных мероприятий.<br> Ознакомиться со всеми событиями можно через календарь</h3>
+                        
                     <div class="ads__item__cart">
                         
                         <div class="ads__item">
                             <a href="msk_yangiliklari_in.html">
-                                <h4 class="ads__data">10.04.2022</h4>
+                                <h4 class="ads__data">17.11.2022</h4>
                                 <h3 class="ads__title__h3">
                                     Sed do eiusmod tempor incididunt ut labore
                                 </h3>
@@ -777,7 +779,7 @@
 
                         <div class="ads__item">
                             <a href="msk_yangiliklari_in.html">
-                                <h4 class="ads__data">10.04.2022</h4>
+                                <h4 class="ads__data">18.11.2022</h4>
                                 <h3 class="ads__title__h3">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </h3>
@@ -786,7 +788,7 @@
 
                         <div class="ads__item">
                             <a href="msk_yangiliklari_in.html">
-                                <h4 class="ads__data">10.04.2022</h4>
+                                <h4 class="ads__data">19.11.2022</h4>
                                 <h3 class="ads__title__h3">
                                     Ut enim ad minim veniam, quis nostrud exercitation 
                                 </h3>
@@ -795,14 +797,42 @@
 
                         <div class="ads__item">
                             <a href="msk_yangiliklari_in.html">
-                                <h4 class="ads__data">10.04.2022</h4>
+                                <h4 class="ads__data">20.11.2022</h4>
                                 <h3 class="ads__title__h3">
                                     Excepteur sint occaecat cupidatat non proident
                                 </h3>
                             </a>
                         </div>
 
-                    </div>
+                        <div class="ads__item">
+                            <a href="msk_yangiliklari_in.html">
+                                <h4 class="ads__data">20.03.2023</h4>
+                                <h3 class="ads__title__h3">
+                                    Excepteur sint occaecat cupidatat non proident
+                                </h3>
+                            </a>
+                        </div>
+
+                        <div class="ads__item">
+                            <a href="msk_yangiliklari_in.html">
+                                <h4 class="ads__data">20.11.2022</h4>
+                                <h3 class="ads__title__h3">
+                                    Excepteur sint occaecat cupidatat non proident
+                                </h3>
+                            </a>
+                        </div>
+
+                        <div class="ads__item">
+                            <a href="msk_yangiliklari_in.html">
+                                <h4 class="ads__data">20.03.2023</h4>
+                                <h3 class="ads__title__h3">
+                                    Excepteur sint occaecat cupidatat non proident
+                                </h3>
+                            </a>
+                        </div>
+
+                    </div>  
+
                 </div>
             </div>
         </section>
@@ -1548,16 +1578,28 @@ function showCalendar(month, year) {
                 cell.setAttribute("data-month", month + 1);
                 cell.setAttribute("data-year", year);
                 cell.setAttribute("data-month_name", months[month]);
+                cell.setAttribute("data-date", date,"data-month", month + 1,"data-year", year,"data-month_name", months[month]);
                 cell.className = "date-picker";
                 cell.innerHTML = "<span>" + date + "</span>";
 
+                eventDates = ["2.11.2022", "17.11.2022", "19.11.2022", "22.11.2022", "14.11.2022", "14.12.2022" , "31.12.2022"]
+                
+                if (eventDates.includes((date + "." + (month + 1) + "." + year).toString())) {
+                    cell.className = "date-picker event_calendar";
+                }
+                else if(eventDates.includes((date + "." + (month + 1) + "." + year).toString()) || date === today.getDate() && year === today.getFullYear() && month === today.getMonth()){
+                    cell.className = "date-picker";
+                    $('.ads__event__title__h3').css('display','flex');
+                    $('.ads__item__cart').css('display','none');
+                }
+                
+
                 if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
-                    cell.className = "date-picker selected";
+                    cell.className += cell.className + " event_calendar_today"
                 }
                 row.appendChild(cell);
                 date++;
             }
-
 
         }
 
