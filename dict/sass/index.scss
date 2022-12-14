@@ -884,7 +884,12 @@ body{
         grid-gap: 20px;
         flex-wrap: wrap;
         margin-top: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
+        
+    }
+
+    &__cart{
+        padding-bottom: 30px;
         border-bottom: 1px solid $title;
     }
 
@@ -956,9 +961,10 @@ body{
 
     &__list{
         display:grid;
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 45% auto;
         grid-gap: 40px;
         margin-top: 30px;
+        padding-bottom: 30px;
     }
 
     &__item__cart{
@@ -1048,7 +1054,7 @@ body{
         display: grid;
         grid-gap:60px;
         margin-top: 30px;
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 49% auto;
 
         padding-bottom: 60px;
         border-bottom:1px solid $title;
@@ -1817,11 +1823,11 @@ body{
     }
 
     .news__list {
-        grid-template-columns: 45% 50%;
+        grid-template-columns: 45% auto;
     }
 
     .ads__list{
-        grid-template-columns:45% 45%;
+        grid-template-columns:45% auto;
     }
 }
 
@@ -2270,7 +2276,7 @@ body{
     }
 
     .news__list {
-        grid-template-columns: 32% 67%;
+        grid-template-columns: 32% 66%;
     }
 
     .news__img__top,
