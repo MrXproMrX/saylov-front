@@ -39,6 +39,7 @@
 @import '_qabulxona_va_devonxona';
 @import '_saylov_blogi';
 @import '_404';
+@import '_search';
 
 body{
     font-family: 'Gotham Pro', sans-serif;
@@ -57,7 +58,6 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 
 // header start
 
@@ -1886,7 +1886,8 @@ body{
     .sorovnomalar_in__cart,
     .yosh_saylovchi_darslari__cart,
     .saylov_blogi_in__cart,
-    .saylov_blogi__cart{
+    .saylov_blogi__cart,
+    .search__cart{
         margin-left: 60px;
         margin-right: 60px;
     }
@@ -1984,7 +1985,8 @@ body{
     .sorovnomalar_in,
     .yosh_saylovchi_darslari,
     .saylov_blogi_in,
-    .saylov_blogi{
+    .saylov_blogi,
+    .search{
         margin-bottom: 40px;
     }
 
@@ -2237,7 +2239,8 @@ body{
     .sorovnomalar_in__cart,
     .yosh_saylovchi_darslari__cart,
     .saylov_blogi_in__cart,
-    .saylov_blogi__cart{
+    .saylov_blogi__cart,
+    .search__cart{
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -2912,7 +2915,8 @@ body{
     .sorovnomalar_in,
     .yosh_saylovchi_darslari,
     .saylov_blogi_in,
-    .saylov_blogi{
+    .saylov_blogi,
+    .search{
         margin-bottom: 30px;
     }
 

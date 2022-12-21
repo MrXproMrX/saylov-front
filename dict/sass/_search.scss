@@ -1,0 +1,54 @@
+// search start
+
+.search{
+    position: relative;
+    margin-bottom: 60px;
+
+    .leadership__button{
+        display: inline-block;
+    }
+
+    .saylovchilar_uchun__hujjatlar__title{
+        padding: 0;
+    }
+
+    &__list{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        grid-gap: 50px;
+    }
+
+    &__item{
+        border: 1px solid #003057;
+        padding: 30px 40px;
+    }
+
+    &__text{
+        @include fontAll(16px,400,#003057);
+        line-height: 140%;
+        margin-bottom:20px;
+
+        min-height: 44px;
+        max-height: 44px;
+        -webkit-line-clamp: 2;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+// search end
+
+@media (max-width:900px){
+    .search__item{
+        padding: 20px 30px;
+    }
+
+    .search__list{
+        grid-gap: 30px;
+    }
+}

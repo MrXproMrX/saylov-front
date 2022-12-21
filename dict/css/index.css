@@ -5323,6 +5323,51 @@ a.back:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+.search {
+  position: relative;
+  margin-bottom: 60px;
+}
+.search .leadership__button {
+  display: inline-block;
+}
+.search .saylovchilar_uchun__hujjatlar__title {
+  padding: 0;
+}
+.search__list {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  grid-gap: 50px;
+}
+.search__item {
+  border: 1px solid #003057;
+  padding: 30px 40px;
+}
+.search__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #003057;
+  line-height: 140%;
+  margin-bottom: 20px;
+  min-height: 44px;
+  max-height: 44px;
+  -webkit-line-clamp: 2;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@media (max-width: 900px) {
+  .search__item {
+    padding: 20px 30px;
+  }
+  .search__list {
+    grid-gap: 30px;
+  }
+}
 body {
   font-family: "Gotham Pro", sans-serif;
   box-sizing: border-box;
@@ -7016,7 +7061,8 @@ body {
 .sorovnomalar_in__cart,
 .yosh_saylovchi_darslari__cart,
 .saylov_blogi_in__cart,
-.saylov_blogi__cart {
+.saylov_blogi__cart,
+.search__cart {
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -7105,7 +7151,8 @@ body {
 .sorovnomalar_in,
 .yosh_saylovchi_darslari,
 .saylov_blogi_in,
-.saylov_blogi {
+.saylov_blogi,
+.search {
     margin-bottom: 40px;
   }
   .useful_links__cart {
@@ -7321,7 +7368,8 @@ body {
 .sorovnomalar_in__cart,
 .yosh_saylovchi_darslari__cart,
 .saylov_blogi_in__cart,
-.saylov_blogi__cart {
+.saylov_blogi__cart,
+.search__cart {
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -7872,7 +7920,8 @@ body {
 .sorovnomalar_in,
 .yosh_saylovchi_darslari,
 .saylov_blogi_in,
-.saylov_blogi {
+.saylov_blogi,
+.search {
     margin-bottom: 30px;
   }
   .election__title__h2 {
