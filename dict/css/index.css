@@ -737,6 +737,7 @@ label {
   aspect-ratio: 1;
   min-width: 300px;
   height: 100%;
+  object-position: top center;
 }
 .leadership__title__h2 {
   font-size: 1.5rem;
@@ -6036,7 +6037,8 @@ body {
 }
 .to_voters__item {
   flex: 0 0 22%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 90px auto;
   align-items: center;
   grid-gap: 20px;
 }
@@ -6076,6 +6078,7 @@ body {
 .services__list {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   grid-gap: 20px;
   flex-wrap: wrap;
 }
@@ -7970,6 +7973,12 @@ body {
   }
   .header__accessibility__dropdown {
     left: 30px !important;
+  }
+  .to_voters__item {
+    grid-template-columns: 70px auto;
+  }
+  .to_voters__title__h3 {
+    text-align: left;
   }
 }
 
