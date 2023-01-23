@@ -5,9 +5,12 @@
     margin-bottom: 60px;
 
     &__img{
-        @include fiximg(100%,auto,true);
-        max-height: 600px;
+        @include fiximg(100%,auto,false);
         margin-bottom: 50px;
+
+        img{
+            max-height: 800px;
+        }
     }
 
     &__download__link{
@@ -36,7 +39,6 @@
 }
 
 // saylov_komissiyalari_in end
-
 
 @media (max-width:1150px){
     .saylov_komissiyalari_in__download__link {

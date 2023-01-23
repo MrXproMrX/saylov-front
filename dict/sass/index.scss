@@ -198,7 +198,12 @@ body{
         &__ru_list{
             @include fontAll(0.875rem,400,$title);
             line-height: 100%;
-            padding: 5px;
+            a{
+                padding: 5px;
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
         }
     
         &__ru_none{

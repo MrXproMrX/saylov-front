@@ -209,8 +209,15 @@
     }
     
     &__item1{
-        @include fiximg(100%,700px,fill);
+        width: 100%;
+        height: 700px !important;
         position: relative;
+
+        img{
+            max-height: 700px;
+            width: 100%;
+            object-fit: fill;
+        }
     }
 
     &__title__h3{
@@ -276,6 +283,10 @@
     .fotogalereya__menu{
         grid-gap: 30px;
     }
+
+    .fotogalereya_in__item1{
+        height: 650px !important;
+    }
 }
 
 @media (max-width:800px){
@@ -286,6 +297,10 @@
 
     .fotogalereya__item{
         height: 300px;
+    }
+
+    .fotogalereya_in__item1{
+        height: 550px !important;
     }
 
     .fotogalereya__menu__active::after{
@@ -314,11 +329,19 @@
     .fotogalereya_in__list2{
         margin-top: 30px;
     }
+
+    .fotogalereya_in__item1{
+        height: 550px !important;
+    }
 }
 
 @media (max-width:500px){
     .fotogalereya__list{
         grid-template-columns: 1fr;
         grid-gap: 20px;
+    }
+
+    .fotogalereya_in__item1{
+        height: 300px !important;
     }
 }
