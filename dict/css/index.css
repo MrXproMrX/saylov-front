@@ -2681,13 +2681,13 @@ label {
 }
 .fotogalereya_in__item1 {
   width: 100%;
-  height: 700px !important;
+  height: 800px !important;
   position: relative;
 }
 .fotogalereya_in__item1 img {
-  max-height: 700px;
+  max-height: 800px;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .fotogalereya_in__title__h3 {
   position: absolute;
