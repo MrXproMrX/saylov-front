@@ -28,7 +28,7 @@
   src: url("../fonts/GothaProBla.otf") format("truetype");
   font-weight: 900;
 }
-.footer__category__none, .footer__link__none span, .footer__bottom__none, .footer__menu__link span, .footer__contact__link, .useful_links__list button, .faq__button__cart, .faq__text, .faq__title__h3 span, .news__link, .election__img img, .election__img, .services__link, .slader__list .slick-next, .slader__list .slick-prev, .slader__list li, .header__category__link, .header__category__none, .header__link__none__item, .header__link__none, .header__bottom__none, .header__bottom__link, .saylov_blogi__link, .yosh_saylovchi_darslari__title__h3, .yosh_saylovchi_darslari__item, .sorovnomalar_in__button, .mskga_elektron_murojaat__button, .mskga_elektron_murojaat__button__cart, .saylov_uchastkalarining_xaritasi__button, .saylovchilar_ruyxatiga__button, .prezidenti_saylovlari__link, .saylov_komissiyalari_map__link, .viloyatlar_komissiyalari__link, .viloyatlar_komissiyalari__item, .xalqaro_meyoriy_huquqiy__link, .siyosiy_partiyalar__link, .saylovchi_lugati__text, .saylovchi_lugati__title span, .kop_beriladigan_savollar__title__h2 span + span, .prezidentlari__link, .saylovchilar_uchun__link, .saylovchilar_uchun__hujjatlar__link, .saylovchilar_uchun__menu__link, .fotogalereya_in__item2, .fotogalereya_in__list1 .slick-next::after, .fotogalereya_in__list1 .slick-next, .fotogalereya_in__list1 .slick-prev::after, .fotogalereya_in__list1 .slick-prev, .fotogalereya__title__h4, .fotogalereya__title__h3_in, .fotogalereya__title__h3, .fotogalereya__item a::after, .fotogalereya__item a, .fotogalereya__menu__link, .msk_yangiliklari_in__button, .msk_yangiliklari_in__share__button, .msk_yangiliklari_in__menu__link, .msk_yangiliklari__link, .msk_yangiliklari__title__h3, .msk_yangiliklari__item, .sertifikatlangan_trenerlar__link, .saylovga_oid_video__title__h3, .saylovga_oid_video__item, .elektron_kullanmalar__link, .saylov_komissiyalari_in__download__link, .msk_qarorlari__title__h5, .msk_qarorlari__item, .ozr_qonunlari__item a span, .ozr_qonunlari__item, .axborotnomalar__pagination_red__item, .axborotnomalar__pagination_red__start, .axborotnomalar__pagination_green__item, .axborotnomalar__pagination_green__start, .axborotnomalar__pagination__item, .axborotnomalar__pagination__start, .axborotnomalar__link, .axborotnomalar__title__h3, .axborotnomalar__item, .leadership__button span, .leadership .about_contint_in__text, .about_contint_in__link, .about_contint__title__h4, .about_contint__item {
+.footer__category__none, .footer__link__none span, .footer__bottom__none, .footer__menu__link span, .footer__contact__link, .useful_links__list button, .faq__button__cart, .faq__text, .faq__title__h3 span, .news__link, .election__img img, .election__img, .services__link, .services__text, .services__title__h4, .services__item, .to_voters__title__h3, .to_voters__item, .slader__list .slick-next, .slader__list .slick-prev, .slader__list li, .header__category__link, .header__category__none, .header__link__none__item, .header__link__none, .header__bottom__none, .header__bottom__link, .saylov_blogi__link, .yosh_saylovchi_darslari__title__h3, .yosh_saylovchi_darslari__item, .sorovnomalar_in__button, .mskga_elektron_murojaat__button, .mskga_elektron_murojaat__button__cart, .saylov_uchastkalarining_xaritasi__button, .saylovchilar_ruyxatiga__button, .prezidenti_saylovlari__link, .saylov_komissiyalari_map__link, .viloyatlar_komissiyalari__link, .viloyatlar_komissiyalari__item, .xalqaro_meyoriy_huquqiy__link, .siyosiy_partiyalar__link, .saylovchi_lugati__text, .saylovchi_lugati__title span, .kop_beriladigan_savollar__title__h2 span + span, .prezidentlari__link, .saylovchilar_uchun__link, .saylovchilar_uchun__hujjatlar__link, .saylovchilar_uchun__menu__link, .fotogalereya_in__item2, .fotogalereya_in__list1 .slick-next::after, .fotogalereya_in__list1 .slick-next, .fotogalereya_in__list1 .slick-prev::after, .fotogalereya_in__list1 .slick-prev, .fotogalereya__title__h4, .fotogalereya__title__h3_in, .fotogalereya__title__h3, .fotogalereya__item, .fotogalereya__item__img::after, .fotogalereya__item__img, .fotogalereya__menu__link, .msk_yangiliklari_in__button, .msk_yangiliklari_in__share__button, .msk_yangiliklari_in__menu__link, .msk_yangiliklari__link, .msk_yangiliklari__title__h3, .msk_yangiliklari__item, .sertifikatlangan_trenerlar__link, .saylovga_oid_video__title__h3, .saylovga_oid_video__item, .elektron_kullanmalar__link, .saylov_komissiyalari_in__download__link, .msk_qarorlari__title__h5, .msk_qarorlari__item, .ozr_qonunlari__item a span, .ozr_qonunlari__item, .axborotnomalar__pagination_red__item, .axborotnomalar__pagination_red__start, .axborotnomalar__pagination_green__item, .axborotnomalar__pagination_green__start, .axborotnomalar__pagination__item, .axborotnomalar__pagination__start, .axborotnomalar__link, .axborotnomalar__title__h3, .axborotnomalar__item, .leadership__button span, .leadership .about_contint_in__text, .about_contint_in__link, .about_contint__title__h4, .about_contint__item {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -717,7 +717,7 @@ label {
   padding-right: 20px;
 }
 .leadership .about_contint_in__text {
-  width: 0;
+  width: 100%;
   height: 0;
   opacity: 0;
   overflow: hidden;
@@ -771,7 +771,6 @@ label {
   color: #ffffff;
 }
 .leadership__active .about_contint_in__text {
-  width: auto;
   height: auto;
   opacity: 1;
   overflow: inherit;
@@ -1662,6 +1661,14 @@ label {
   text-overflow: ellipsis;
   white-space: normal;
 }
+.saylovga_oid_video__data {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #003057;
+  line-height: 100%;
+  padding: 0px 30px;
+  margin-bottom: 10px;
+}
 
 .saylovga_oid_video_in {
   position: relative;
@@ -1709,6 +1716,9 @@ label {
   .saylovga_oid_video_in__video__item {
     height: 600px;
   }
+  .saylovga_oid_video__data {
+    padding: 0px 20px;
+  }
 }
 @media (max-width: 1000px) {
   .saylovga_oid_video__list {
@@ -1732,6 +1742,9 @@ label {
   }
   .saylovga_oid_video_in__video__item {
     height: 400px;
+  }
+  .saylovga_oid_video__data {
+    padding: 0px 15px;
   }
 }
 @media (max-width: 500px) {
@@ -1994,7 +2007,11 @@ label {
   border: 1px solid #003057;
   width: 100%;
   height: auto;
-  padding-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .msk_yangiliklari__item:hover {
   border: 1px solid #25B2D3;
@@ -2048,8 +2065,6 @@ label {
   display: flex;
   align-items: center;
   grid-gap: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .msk_yangiliklari__title__h3 {
   font-size: 1.125rem;
@@ -2057,8 +2072,6 @@ label {
   color: #003057;
   line-height: 130%;
   margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
   max-height: 70px;
   -webkit-line-clamp: 3;
   position: relative;
@@ -2074,7 +2087,6 @@ label {
   font-size: 0.875rem;
   font-weight: 400;
   color: #ffffff;
-  margin-left: 30px;
   display: inline-block;
 }
 .msk_yangiliklari__link span {
@@ -2365,16 +2377,8 @@ label {
   .msk_yangiliklari__list {
     grid-template-columns: 1fr;
   }
-  .msk_yangiliklari__data,
-.msk_yangiliklari__title__h3 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .msk_yangiliklari__link {
-    margin-left: 20px;
-  }
   .msk_yangiliklari__item {
-    padding-bottom: 20px;
+    padding: 20px;
   }
   .msk_yangiliklari_in__img {
     padding: 0 30px;
@@ -2536,38 +2540,23 @@ label {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
 }
-.fotogalereya__item {
+.fotogalereya__item__img {
   width: 100%;
   height: 310px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
-}
-.fotogalereya__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.fotogalereya__item img {
-  aspect-ratio: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.fotogalereya__item a {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  margin-bottom: 20px;
+}
+.fotogalereya__item__img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.fotogalereya__item a::after {
+.fotogalereya__item__img::after {
   content: "";
   background: linear-gradient(0deg, rgba(0, 48, 87, 0.5), rgba(0, 48, 87, 0.5));
   width: 100%;
@@ -2578,24 +2567,45 @@ label {
   top: 0;
   left: 0;
 }
-.fotogalereya__item a:hover::after {
+.fotogalereya__item__img img {
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.fotogalereya__item {
+  position: relative;
+  padding-bottom: 20px;
+  border: 1px solid #003057;
+}
+.fotogalereya__item:hover {
+  border: 1px solid #25B2D3;
+}
+.fotogalereya__item:hover .fotogalereya__item__img::after {
   background: linear-gradient(0deg, rgba(0, 48, 87, 0.9), rgba(0, 48, 87, 0.9));
 }
-.fotogalereya__item a:hover .fotogalereya__title__h4 {
+.fotogalereya__item:hover .fotogalereya__title__h4 {
   width: auto;
   height: auto;
   opacity: 1;
   overflow: inherit;
   margin-top: 10px;
 }
-.fotogalereya__item a:hover .fotogalereya__title__h3_in {
-  display: none;
-}
 .fotogalereya__title__h3 {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #003057;
   line-height: 125%;
+  padding: 0 30px;
+  max-height: 60px;
+  -webkit-line-clamp: 3;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .fotogalereya__title__h3_in {
   font-size: 1.125rem;
@@ -2681,11 +2691,13 @@ label {
 }
 .fotogalereya_in__item1 {
   width: 100%;
-  height: 800px !important;
+  max-height: 800px;
+  min-height: 200px;
   position: relative;
 }
 .fotogalereya_in__item1 img {
   max-height: 800px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -2744,14 +2756,14 @@ label {
 .fotogalereya__title__h3_in {
     font-size: 1rem;
   }
+  .fotogalereya__title__h3 {
+    max-height: 52px;
+  }
   .fotogalereya__menu__link {
     font-size: 0.875rem;
   }
   .fotogalereya__menu {
     grid-gap: 30px;
-  }
-  .fotogalereya_in__item1 {
-    height: 650px !important;
   }
 }
 @media (max-width: 800px) {
@@ -2759,14 +2771,14 @@ label {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  .fotogalereya__item {
-    height: 300px;
-  }
-  .fotogalereya_in__item1 {
-    height: 550px !important;
+  .fotogalereya__title__h3 {
+    padding: 0 20px;
   }
   .fotogalereya__menu__active::after {
     display: none;
+  }
+  .fotogalereya__item__img {
+    height: 300px;
   }
   .fotogalereya__menu li {
     position: relative;
@@ -2777,7 +2789,7 @@ label {
   }
 }
 @media (max-width: 650px) {
-  .fotogalereya__item {
+  .fotogalereya__item__img {
     height: 250px;
   }
   .fotogalereya_in__item2 {
@@ -2786,17 +2798,11 @@ label {
   .fotogalereya_in__list2 {
     margin-top: 30px;
   }
-  .fotogalereya_in__item1 {
-    height: 550px !important;
-  }
 }
 @media (max-width: 500px) {
   .fotogalereya__list {
     grid-template-columns: 1fr;
     grid-gap: 20px;
-  }
-  .fotogalereya_in__item1 {
-    height: 300px !important;
   }
 }
 .saylovchilarga {
@@ -3555,13 +3561,12 @@ label {
   font-weight: 400;
   color: #003057;
   line-height: 130%;
-  width: 0;
+  width: 100%;
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
 .saylovchi_lugati__active .saylovchi_lugati__text {
-  width: 100%;
   opacity: 1;
   height: auto;
   overflow: inherit;
@@ -5648,6 +5653,9 @@ body {
   grid-gap: 30px;
   flex-direction: column;
 }
+.header__menu__none li {
+  width: 100%;
+}
 .header__link__none {
   font-size: 1rem;
   font-weight: 500;
@@ -5663,12 +5671,15 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: #003057;
-  line-height: 120%;
+  padding: 5px;
   display: flex;
   align-items: center;
   grid-gap: 5px;
   max-width: 285px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__category__none {
   display: none;
@@ -5705,6 +5716,18 @@ body {
 
 .header__menu__none li:hover > .header__category__none {
   display: flex;
+}
+
+.header__menu__none li:hover > span {
+  color: #ffffff;
+  background-color: #25B2D3;
+}
+.header__menu__none li:hover > span span {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
 .header__menu__none li:hover .header__link__none {
@@ -6071,13 +6094,20 @@ body {
   grid-template-columns: 90px auto;
   align-items: center;
   grid-gap: 20px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.to_voters__item:hover {
+  background-color: #003057;
+}
+.to_voters__item:hover .to_voters__title__h3 {
+  color: #EBEFF2;
 }
 .to_voters__title__h3 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #003057;
   line-height: 120%;
-  text-align: center;
 }
 .to_voters__icons {
   width: 90px;
@@ -6123,6 +6153,17 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+.services__item:hover {
+  background-color: #25B2D3;
+}
+.services__item:hover .services__title__h4,
+.services__item:hover .services__text {
+  color: #003057;
+}
+.services__item:hover .services__link {
+  background-color: #003057;
+  color: #EBEFF2;
+}
 .services__title__h4 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -6163,9 +6204,6 @@ body {
 }
 .services__link span {
   margin-left: 5px;
-}
-.services__link:hover {
-  background-color: #58d2ee;
 }
 
 .election {
@@ -6264,6 +6302,7 @@ body {
 .news__item__cart {
   width: 100%;
   border: 1px solid #003057;
+  padding: 30px;
 }
 .news__img {
   width: 100%;
@@ -6280,7 +6319,6 @@ body {
   font-weight: 400;
   color: #003057;
   line-height: 100%;
-  padding: 0 30px;
   margin-bottom: 15px;
 }
 .news__title__h3 {
@@ -6288,7 +6326,6 @@ body {
   font-weight: 700;
   color: #003057;
   line-height: 125%;
-  padding: 0 30px;
   margin-bottom: 20px;
   max-height: 68px;
   -webkit-line-clamp: 3;
@@ -6303,9 +6340,11 @@ body {
   display: flex;
   align-items: center;
   border: 1px solid #003057;
+  padding: 30px;
+  grid-gap: 30px;
 }
 .news__img__top {
-  flex: 0 0 50%;
+  flex: 0 0 48%;
   width: 100%;
   height: 290px;
 }
@@ -6315,7 +6354,6 @@ body {
   object-fit: cover;
 }
 .news__item__bottom {
-  flex: 0 0 50%;
   width: 100%;
 }
 .news__item {
@@ -6332,7 +6370,6 @@ body {
   font-weight: 400;
   color: #ffffff;
   display: inline-block;
-  margin: 0 30px 10px 30px;
 }
 .news__link span {
   margin-left: 5px;
@@ -6919,7 +6956,7 @@ body {
 }
 .footer__bottom__none {
   opacity: 0;
-  width: 0;
+  width: 100%;
   height: 0;
   overflow: hidden;
   border: 1px solid #25B2D3;
@@ -6978,7 +7015,6 @@ body {
 }
 .footer__menu__active .footer__bottom__none {
   opacity: 1;
-  width: auto;
   height: auto;
   overflow: inherit;
   margin-top: 20px;
@@ -6997,6 +7033,9 @@ body {
   height: auto;
   opacity: 1;
   overflow: inherit;
+}
+.footer__none__active .footer__link__none {
+  color: #25B2D3;
 }
 .footer__none__active .footer__link__none span {
   transform: rotate(180deg);
@@ -7026,6 +7065,12 @@ body {
   line-height: 125%;
   display: inline-block;
   text-align: center;
+}
+.footer__item__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #EBEFF2;
+  line-height: 140%;
 }
 
 @media (max-width: 1600px) {
@@ -7298,6 +7343,11 @@ body {
   .header__input__form {
     width: 240px;
   }
+  .footer__list {
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 1150px) {
   .header__top__form {
@@ -7431,6 +7481,7 @@ body {
   }
   .news__item__top {
     flex-direction: column;
+    grid-gap: 0;
   }
   .news__list {
     grid-template-columns: 32% 66%;
@@ -7591,6 +7642,9 @@ body {
   .header__menu__none {
     width: 100%;
   }
+  .header__menu__none span {
+    padding: 5px;
+  }
   .header__bottom__active .header__bottom__none {
     display: flex !important;
   }
@@ -7605,11 +7659,19 @@ body {
     -o-transform: rotate(180deg);
     color: #25B2D3;
   }
+  .header__menu__none li:hover > span span {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
   .header__link__none__active .header__category__none {
     display: flex !important;
   }
   .header__link__none__active .header__link__none__item {
-    color: #25B2D3;
+    color: #fff;
+    background-color: #25B2D3;
   }
   .header__link__none__active .header__link__none__item span {
     transform: rotate(180deg) !important;
@@ -7617,7 +7679,7 @@ body {
     -moz-transform: rotate(180deg) !important;
     -ms-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
-    color: #25B2D3;
+    color: #fff;
   }
 }
 @media (max-width: 1000px) {
@@ -7712,8 +7774,8 @@ body {
   }
   .footer__list,
 .footer__contact {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .footer__bottom__menu {
     flex-direction: column;
@@ -7814,8 +7876,10 @@ body {
     height: 4px;
     border-radius: 50px;
   }
-  .news__item__top {
+  .news__item__top,
+.news__item__cart {
     width: 100%;
+    padding: 20px;
   }
   .ads__list {
     border: none;
@@ -7844,13 +7908,6 @@ body {
   }
   .election__title__h2 {
     font-size: 1.625rem;
-  }
-  .news__data,
-.news__title__h3 {
-    padding: 0 20px;
-  }
-  .news__link {
-    margin: 0 20px 10px 20px;
   }
 }
 @media (max-width: 480px) {

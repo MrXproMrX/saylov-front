@@ -9,7 +9,11 @@
         border: 1px solid $title;
         width: 100%;
         height: auto;
-        padding-bottom: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
         @extend%transition;
         &:hover{
             border: 1px solid $blue;
@@ -65,17 +69,13 @@
         display: flex;
         align-items: center;
         grid-gap: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     &__title__h3{
         @include fontAll(1.125rem,700,$title);
         line-height: 130%;
         margin-bottom: 20px;
-        padding-left: 30px;
         @extend%transition;
-        padding-right: 30px;
 
         max-height: 70px;
         -webkit-line-clamp: 3;
@@ -91,7 +91,6 @@
         background-color:$title;
         padding: 18px 30px;
         @include fontAll(0.875rem,400,$link);
-        margin-left: 30px;
         @extend%transition;
         display: inline-block;
         span{
@@ -413,18 +412,8 @@
         grid-template-columns: 1fr;
     }
 
-    .msk_yangiliklari__data,
-    .msk_yangiliklari__title__h3{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .msk_yangiliklari__link{
-        margin-left: 20px;
-    }
-
     .msk_yangiliklari__item {
-        padding-bottom: 20px;
+        padding: 20px;
     }
 
     .msk_yangiliklari_in__img{

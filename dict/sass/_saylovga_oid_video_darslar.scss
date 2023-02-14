@@ -59,6 +59,13 @@
         text-overflow: ellipsis;
         white-space: normal;
     }
+
+    &__data{
+        @include fontAll(0.875rem,400,$title);
+        line-height: 100%;
+        padding: 0px 30px;
+        margin-bottom: 10px;
+    }
 }
 
 // Saylovga oid video darslar end
@@ -115,6 +122,10 @@
     .saylovga_oid_video_in__video__item{
         height: 600px;
     }
+
+    .saylovga_oid_video__data{
+        padding: 0px 20px;
+    }
 }
 
 
@@ -146,6 +157,10 @@
 
     .saylovga_oid_video_in__video__item{
         height: 400px;
+    }
+
+    .saylovga_oid_video__data{
+        padding: 0px 15px;
     }
 }
 
