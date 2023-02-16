@@ -28,7 +28,7 @@
   src: url("../fonts/GothaProBla.otf") format("truetype");
   font-weight: 900;
 }
-.footer__category__none, .footer__link__none span, .footer__bottom__none, .footer__menu__link span, .footer__contact__link, .useful_links__list button, .faq__button__cart, .faq__text, .faq__title__h3 span, .news__link, .election__img img, .election__img, .services__link, .services__text, .services__title__h4, .services__item, .to_voters__title__h3, .to_voters__item, .slader__list .slick-next, .slader__list .slick-prev, .slader__list li, .header__category__link, .header__category__none, .header__link__none__item, .header__link__none, .header__bottom__none, .header__bottom__link, .saylov_blogi__link, .yosh_saylovchi_darslari__title__h3, .yosh_saylovchi_darslari__item, .sorovnomalar_in__button, .mskga_elektron_murojaat__button, .mskga_elektron_murojaat__button__cart, .saylov_uchastkalarining_xaritasi__button, .saylovchilar_ruyxatiga__button, .prezidenti_saylovlari__link, .saylov_komissiyalari_map__link, .viloyatlar_komissiyalari__link, .viloyatlar_komissiyalari__item, .xalqaro_meyoriy_huquqiy__link, .siyosiy_partiyalar__link, .saylovchi_lugati__text, .saylovchi_lugati__title span, .kop_beriladigan_savollar__title__h2 span + span, .prezidentlari__link, .saylovchilar_uchun__link, .saylovchilar_uchun__hujjatlar__link, .saylovchilar_uchun__menu__link, .fotogalereya_in__item2, .fotogalereya_in__list1 .slick-next::after, .fotogalereya_in__list1 .slick-next, .fotogalereya_in__list1 .slick-prev::after, .fotogalereya_in__list1 .slick-prev, .fotogalereya__title__h4, .fotogalereya__title__h3_in, .fotogalereya__title__h3, .fotogalereya__item, .fotogalereya__item__img::after, .fotogalereya__item__img, .fotogalereya__menu__link, .msk_yangiliklari_in__button, .msk_yangiliklari_in__share__button, .msk_yangiliklari_in__menu__link, .msk_yangiliklari__link, .msk_yangiliklari__title__h3, .msk_yangiliklari__item, .sertifikatlangan_trenerlar__link, .saylovga_oid_video__title__h3, .saylovga_oid_video__item, .elektron_kullanmalar__link, .saylov_komissiyalari_in__download__link, .msk_qarorlari__title__h5, .msk_qarorlari__item, .ozr_qonunlari__item a span, .ozr_qonunlari__item, .axborotnomalar__pagination_red__item, .axborotnomalar__pagination_red__start, .axborotnomalar__pagination_green__item, .axborotnomalar__pagination_green__start, .axborotnomalar__pagination__item, .axborotnomalar__pagination__start, .axborotnomalar__link, .axborotnomalar__title__h3, .axborotnomalar__item, .leadership__button span, .leadership .about_contint_in__text, .about_contint_in__link, .about_contint__title__h4, .about_contint__item {
+.footer__category__none, .footer__link__none span, .footer__bottom__none, .footer__menu__link span, .footer__contact__link, .useful_links__list button, .faq__button__cart, .faq__text, .faq__title__h3 span, .news__link, .election__img img, .election__img, .services__link, .services__text, .services__title__h4, .services__item, .to_voters__title__h3, .to_voters__item, .slader__list .slick-next, .slader__list .slick-prev, .slader__list li, .header__category__link, .header__category__none, .header__link__none__item, .header__link__none, .header__menu__none li a, .header__bottom__none, .header__bottom__link, .saylov_blogi__link, .yosh_saylovchi_darslari__title__h3, .yosh_saylovchi_darslari__item, .sorovnomalar_in__button, .mskga_elektron_murojaat__button, .mskga_elektron_murojaat__button__cart, .saylov_uchastkalarining_xaritasi__button, .saylovchilar_ruyxatiga__button, .prezidenti_saylovlari__link, .saylov_komissiyalari_map__link, .viloyatlar_komissiyalari__link, .viloyatlar_komissiyalari__item, .xalqaro_meyoriy_huquqiy__link, .siyosiy_partiyalar__link, .saylovchi_lugati__text, .saylovchi_lugati__title span, .kop_beriladigan_savollar__title__h2 span + span, .prezidentlari__link, .saylovchilar_uchun__link, .saylovchilar_uchun__hujjatlar__link, .saylovchilar_uchun__menu__link, .fotogalereya_in__item2, .fotogalereya_in__list1 .slick-next::after, .fotogalereya_in__list1 .slick-next, .fotogalereya_in__list1 .slick-prev::after, .fotogalereya_in__list1 .slick-prev, .fotogalereya__title__h4, .fotogalereya__title__h3_in, .fotogalereya__title__h3, .fotogalereya__item, .fotogalereya__item__img::after, .fotogalereya__item__img, .fotogalereya__menu__link, .msk_yangiliklari_in__button, .msk_yangiliklari_in__share__button, .msk_yangiliklari_in__menu__link, .msk_yangiliklari__link, .msk_yangiliklari__title__h3, .msk_yangiliklari__item, .sertifikatlangan_trenerlar__link, .saylovga_oid_video__title__h3, .saylovga_oid_video__item, .elektron_kullanmalar__link, .saylov_komissiyalari_in__download__link, .msk_qarorlari__title__h5, .msk_qarorlari__item, .ozr_qonunlari__item a span, .ozr_qonunlari__item, .axborotnomalar__pagination_red__item, .axborotnomalar__pagination_red__start, .axborotnomalar__pagination_green__item, .axborotnomalar__pagination_green__start, .axborotnomalar__pagination__item, .axborotnomalar__pagination__start, .axborotnomalar__link, .axborotnomalar__title__h3, .axborotnomalar__item, .leadership__button span, .leadership .about_contint_in__text, .about_contint_in__link, .about_contint__title__h4, .about_contint__item {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -5656,6 +5656,11 @@ body {
 .header__menu__none li {
   width: 100%;
 }
+.header__menu__none li a {
+  padding: 5px 20px;
+  width: 100%;
+  width: 100%;
+}
 .header__link__none {
   font-size: 1rem;
   font-weight: 500;
@@ -5671,7 +5676,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: #003057;
-  padding: 5px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
   grid-gap: 5px;
@@ -5695,6 +5700,8 @@ body {
   line-height: 100%;
   padding-left: 20px;
   position: relative;
+  display: flex;
+  width: 100% !important;
 }
 .header__category__link::after {
   content: "";
@@ -5703,26 +5710,33 @@ body {
   height: 1px;
   background-color: #003057;
   position: absolute;
-  top: 7.5px;
+  top: 50%;
   left: 0;
+  z-index: 10;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
 }
 
-.header__menu__none li a:hover {
-  color: #25B2D3;
-}
-.header__menu__none li a:hover::after {
+.header__menu__none li:hover > .header__category__link {
+  color: #ffffff;
   background-color: #25B2D3;
+}
+.header__menu__none li:hover > .header__category__link::after {
+  background-color: #ffffff;
 }
 
 .header__menu__none li:hover > .header__category__none {
   display: flex;
 }
 
-.header__menu__none li:hover > span {
+.header__link__none__item:hover {
   color: #ffffff;
   background-color: #25B2D3;
 }
-.header__menu__none li:hover > span span {
+.header__link__none__item:hover span {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -5730,8 +5744,9 @@ body {
   -o-transform: rotate(180deg);
 }
 
-.header__menu__none li:hover .header__link__none {
-  color: #25B2D3;
+.header__menu__none li:hover > .header__link__none {
+  background-color: #25B2D3;
+  color: #ffffff;
 }
 
 .header__menu__none li:hover a span {
@@ -7641,9 +7656,6 @@ body {
   }
   .header__menu__none {
     width: 100%;
-  }
-  .header__menu__none span {
-    padding: 5px;
   }
   .header__bottom__active .header__bottom__none {
     display: flex !important;

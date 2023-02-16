@@ -60,7 +60,7 @@ body{
 }
 
 // header start
-
+ 
 .header{
     position: relative;
 
@@ -307,6 +307,12 @@ body{
         flex-direction: column;
         li{
             width: 100%;
+            a{
+                padding: 5px 20px;
+                width: 100%;
+                width: 100%;
+                @extend%transition;
+            }
         }
     }
 
@@ -323,8 +329,8 @@ body{
 
     &__link__none__item{
         @include fontAll(1rem,500,$title);
-        padding: 5px;
         @extend%transition;
+        padding: 5px 20px;
         display: flex;
         align-items:center;
         grid-gap: 5px;
@@ -350,6 +356,8 @@ body{
         padding-left: 20px;
         position: relative;
         @extend%transition;
+        display: flex;
+        width: 100% !important;
 
         &::after{
             content:'';
@@ -358,16 +366,24 @@ body{
             height: 1px;
             background-color:$title;
             position: absolute;
-            top: 7.5px;
+            top: 50%;
             left: 0;
+            z-index: 10;
+
+            transform: translate(0,-50%);
+            -webkit-transform: translate(0,-50%);
+            -moz-transform: translate(0,-50%);
+            -ms-transform: translate(0,-50%);
+            -o-transform: translate(0,-50%);
         }
     }
 }
 
-.header__menu__none li a:hover{
-    color:$blue;
+.header__menu__none li:hover > .header__category__link{
+    color:$link;
+    background-color:$blue;
     &::after{
-        background-color:$blue;
+        background-color:$link;
     }
 }
 
@@ -375,7 +391,7 @@ body{
     display: flex;
 }
 
-.header__menu__none li:hover > span{
+.header__link__none__item:hover{
     color:$link;
     background-color:$blue;
     span{
@@ -387,8 +403,9 @@ body{
     }
 }
 
-.header__menu__none li:hover .header__link__none{
-    color:$blue;
+.header__menu__none li:hover > .header__link__none{
+    background-color:$blue;
+    color:$link;
 }
 
 .header__menu__none li:hover a span{
@@ -409,6 +426,9 @@ body{
 
 // header end
 
+p{
+    
+}
 
 // slader start
 
@@ -2527,9 +2547,6 @@ body{
 
     .header__menu__none{
         width: 100%;
-        span{
-            padding: 5px;
-        }
     }
     
 
