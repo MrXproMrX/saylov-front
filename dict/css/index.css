@@ -5416,6 +5416,31 @@ body {
   box-sizing: border-box;
 }
 
+.oneId__item {
+  border: 1px solid #003057;
+  padding: 20px 20px 50px 20px;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.oneId__item h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003057;
+  line-height: 135%;
+  margin-bottom: 10px;
+}
+.oneId__item a {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+
 .header {
   position: relative;
 }
@@ -6151,15 +6176,13 @@ body {
   background-color: #003057;
 }
 .services__list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   flex-wrap: wrap;
 }
 .services__item {
   width: 100%;
-  flex: 0 0 23%;
   border: 1px solid #25B2D3;
   padding: 25px 30px;
   min-height: 240px;
@@ -7293,6 +7316,9 @@ body {
   .ads__event__title__h3 {
     font-size: 1rem;
   }
+  .oneId__item h1 {
+    font-size: 1.375rem;
+  }
   .slader__title__bottom {
     font-size: 1.125rem;
     max-height: 18px;
@@ -7698,9 +7724,6 @@ body {
   .services__item {
     padding: 20px 20px;
   }
-  .services__item {
-    flex: 0 0 31%;
-  }
   .slader__list {
     width: 55%;
     flex: 0 0 55%;
@@ -7714,6 +7737,9 @@ body {
   .election__item {
     flex: 0 0 47%;
     width: 100%;
+  }
+  .oneId__item h1 {
+    font-size: 1.25rem;
   }
   .news__list,
 .ads__list,
@@ -7774,9 +7800,11 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .services__item,
-.to_voters__item {
+  .to_voters__item {
     flex: 0 0 47%;
+  }
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer__list menu, .footer__menu {
     display: none;
@@ -7837,7 +7865,6 @@ body {
 }
 @media (max-width: 600px) {
   .services__item {
-    flex: 0 0 100%;
     min-height: auto;
   }
   .header__menu__none {
@@ -7920,6 +7947,9 @@ body {
   }
   .election__title__h2 {
     font-size: 1.625rem;
+  }
+  .services__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 480px) {
