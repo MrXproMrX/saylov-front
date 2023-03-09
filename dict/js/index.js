@@ -233,7 +233,7 @@ $(document).ready(function(){
             Counter:$(this).text()
         },
         {
-            duration:9000,
+            duration:5000,
             easing:"swing",
             step:function(now){
                 $(this).text(Math.ceil(now));

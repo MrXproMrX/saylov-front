@@ -53,6 +53,11 @@ body{
     text-size-adjust: auto !important;
 }
 
+textarea, input[type="date" i] {
+    font-family: 'Gotham Pro', sans-serif;
+    box-sizing: border-box;
+}
+
 .container{
     max-width: 1320px;
     margin: 0 auto;
@@ -1496,14 +1501,28 @@ body{
     }
 
     &__menu__link{
-        @include fontAll(0.875rem,400,$title);
-        text-align: right;
-        line-height: 100%;
+        background-color:$title;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
         display: block;
         margin-top: 15px;
+        line-height: 100%;
+        @extend%transition;
+        width: fit-content;
         span{
             margin-left: 5px;
         }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    }
+
+    &__menu__button{
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 }
 
@@ -1918,6 +1937,12 @@ body{
 
     .ads__list{
         grid-template-columns:45% auto;
+    }
+}
+
+@media (max-width:1500px){
+    .slader__hour__data{
+        font-size: 4.375rem;
     }
 }
 

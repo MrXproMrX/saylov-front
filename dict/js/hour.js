@@ -1,7 +1,7 @@
 const data = document.querySelector('#data_number')
-const dataNumber = data.textContent
-
-document.addEventListener('DOMContentLoaded', function () {
+if(data){
+  const dataNumber = data.textContent
+  document.addEventListener('DOMContentLoaded', function () {
     // конечная дата, например 1 декабря 2021
     const deadline = new Date(dataNumber);
     // id таймера
@@ -18,15 +18,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
       const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+      const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
 
       $days.textContent = days < 10 ? '0' + days : days;
       $hours.textContent = hours < 10 ? '0' + hours : hours;
+      $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
     }
     // получаем элементы, содержащие компоненты даты
     const $days = document.querySelector('.timer__days');
     const $hours = document.querySelector('.timer__hours');
+    const $minutes = document.querySelector('.timer__minutes');
     // вызываем функцию countdownTimer
     countdownTimer();
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
 });
+}
