@@ -6365,6 +6365,14 @@ textarea, input[type=date i] {
   -o-transform: scale(1.1);
 }
 
+.electionMargin {
+  margin: 30px 0;
+}
+
+.electionMarginBootom {
+  margin-bottom: 30px;
+}
+
 .news {
   position: relative;
   margin-bottom: 60px;
