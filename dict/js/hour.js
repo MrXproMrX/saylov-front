@@ -3,8 +3,7 @@ if(data){
   const itemYear = document.querySelector("#itemYear");
   const itemMonth = document.querySelector("#itemMonth");
   const itemDays = document.querySelector("#itemDays");
-  timeend = new Date(parseInt(itemYear.textContent),parseInt(itemMonth.textContent),parseInt(itemDays.textContent));
-  console.log(timeend)
+  timeend = new Date(parseInt(itemYear.textContent),parseInt(itemMonth.textContent - 1),parseInt(itemDays.textContent));
   function time() {
     today = new Date();
     today = Math.floor((timeend - today) / 1000);
