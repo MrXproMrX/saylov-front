@@ -1,51 +1,54 @@
 // saylov_komissiyalari_in start
 
-.saylov_komissiyalari_in{
-    position: relative;
-    margin-bottom: 60px;
+.saylov_komissiyalari_in {
+  position: relative;
+  margin-bottom: 60px;
 
-    &__img{
-        @include fiximg(100%,auto,false);
-        margin-bottom: 50px;
+  &__img {
+    @include fiximg(100%, auto, false);
+    margin-bottom: 50px;
 
-        img{
-            max-height: 800px;
-        }
+    img {
+      max-height: 800px;
+    }
+  }
+
+  &__download__link {
+    @include fontAll(1rem, 400, $title);
+    line-height: 125%;
+    @extend%transition;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid $fon;
+    padding: 20px;
+    span {
+      margin-right: 10px;
+      color: $blue;
+      font-size: 30px;
     }
 
-    &__download__link{
-        @include fontAll(1rem,400,$title);
-        line-height: 125%;
-        @extend%transition;
-        display: flex;
-        align-items: flex-start;
-        span{
-            margin-right: 10px;
-            color:$blue;
-        }
-
-        &:hover{
-            color:$blue;
-        }
+    &:hover {
+      color: $blue;
+      border-color: $blue;
     }
+  }
 
-
-    &__download{
-        margin-top: 30px;
-        li+li{
-            margin-top: 20px;
-        }
+  &__download {
+    margin-top: 30px;
+    li + li {
+      margin-top: 20px;
     }
+  }
 }
 
 // saylov_komissiyalari_in end
 
-@media (max-width:1150px){
-    .saylov_komissiyalari_in__download__link {
-        font-size: 0.875rem;
-    }
+@media (max-width: 1150px) {
+  .saylov_komissiyalari_in__download__link {
+    font-size: 0.875rem;
+  }
 
-    .saylov_komissiyalari_in__download{
-        margin-top: 30px;
-    }
+  .saylov_komissiyalari_in__download {
+    margin-top: 30px;
+  }
 }

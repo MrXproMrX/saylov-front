@@ -191,7 +191,7 @@ label {
   font-size: 1rem;
   font-weight: 400;
   color: #003057;
-  line-height: 135%;
+  line-height: 145%;
   text-align: justify;
 }
 .about_contint_in__text h1, .about_contint_in__text h2, .about_contint_in__text h3, .about_contint_in__text h4, .about_contint_in__text h5, .about_contint_in__text h6, .about_contint_in__text em, .about_contint_in__text strong {
@@ -209,18 +209,13 @@ label {
   display: inline-block;
 }
 .about_contint_in__text img {
-  width: 48%;
-  height: 480px;
-  object-fit: cover;
-  float: left;
+  width: 100%;
+  height: auto;
+  max-height: max-content;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 20px;
-}
-.about_contint_in__text img:nth-child(even) {
-  float: right;
-  margin-right: 0;
-  margin-left: 20px;
+  object-fit: cover;
+  object-position: center top;
 }
 .about_contint_in__video__video {
   position: relative;
@@ -232,6 +227,10 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.about_contint_in__video__video iframe {
+  width: 100% !important;
+  height: 100% !important;
 }
 .about_contint_in__video__video a {
   width: 100%;
@@ -341,8 +340,6 @@ label {
   }
   .about_contint_in__text img {
     width: 100%;
-    max-height: 300px;
-    float: inherit !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -1415,6 +1412,12 @@ label {
 .msk_qarorlari__list .red:hover .msk_qarorlari__title__h5 {
   color: #A81255;
 }
+.msk_qarorlari__list__cart {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
 .msk_qarorlari__item {
   border: 1px solid #003057;
   padding: 20px 30px;
@@ -1480,7 +1483,8 @@ label {
   .msk_qarorlari__item {
     padding: 15px 20px;
   }
-  .msk_qarorlari__list {
+  .msk_qarorlari__list,
+.msk_qarorlari__list__cart {
     margin-top: 40px;
   }
   .msk_qarorlari__from {
@@ -1497,7 +1501,11 @@ label {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  .msk_qarorlari__list {
+  .msk_qarorlari__list__cart {
+    grid-gap: 20px;
+  }
+  .msk_qarorlari__list,
+.msk_qarorlari__list__cart {
     margin-top: 30px;
   }
   .msk_qarorlari__title__h3 {
@@ -1511,13 +1519,9 @@ label {
 @media (max-width: 650px) {
   .msk_qarorlari__list {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
   }
   .msk_qarorlari__from {
     padding: 20px;
-  }
-  .msk_qarorlari__list {
-    margin-top: 30px;
   }
 }
 .saylov_komissiyalari_in {
@@ -1544,13 +1548,17 @@ label {
   line-height: 125%;
   display: flex;
   align-items: flex-start;
+  border: 1px solid #003057;
+  padding: 20px;
 }
 .saylov_komissiyalari_in__download__link span {
   margin-right: 10px;
   color: #25B2D3;
+  font-size: 30px;
 }
 .saylov_komissiyalari_in__download__link:hover {
   color: #25B2D3;
+  border-color: #25B2D3;
 }
 .saylov_komissiyalari_in__download {
   margin-top: 30px;
@@ -1686,6 +1694,10 @@ label {
 }
 .saylovga_oid_video_in__video__item img {
   object-position: center top;
+}
+.saylovga_oid_video_in__video__item iframe {
+  width: 100% !important;
+  height: 100% !important;
 }
 .saylovga_oid_video_in__video__item a {
   width: 100%;
@@ -2691,8 +2703,9 @@ label {
 }
 .fotogalereya_in__item1 {
   width: 100%;
-  max-height: 800px;
-  min-height: 200px;
+  height: 700px !important;
+  min-height: 800px;
+  min-height: 200px !important;
   position: relative;
 }
 .fotogalereya_in__item1 img {
@@ -2765,6 +2778,14 @@ label {
   .fotogalereya__menu {
     grid-gap: 30px;
   }
+  .fotogalereya_in__item1 {
+    height: 600px !important;
+  }
+}
+@media (max-width: 950px) {
+  .fotogalereya_in__item1 {
+    height: 500px !important;
+  }
 }
 @media (max-width: 800px) {
   .fotogalereya__list {
@@ -2787,6 +2808,9 @@ label {
   .fotogalereya__menu {
     padding-bottom: 20px;
   }
+  .fotogalereya_in__item1 {
+    height: 400px !important;
+  }
 }
 @media (max-width: 650px) {
   .fotogalereya__item__img {
@@ -2798,11 +2822,22 @@ label {
   .fotogalereya_in__list2 {
     margin-top: 30px;
   }
+  .fotogalereya_in__item1 {
+    height: 350px !important;
+  }
 }
 @media (max-width: 500px) {
   .fotogalereya__list {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+  .fotogalereya_in__item1 {
+    height: 300px !important;
+  }
+}
+@media (max-width: 400px) {
+  .fotogalereya_in__item1 {
+    height: 250px !important;
   }
 }
 .saylovchilarga {
@@ -5433,6 +5468,45 @@ a.back:hover {
     grid-gap: 30px;
   }
 }
+.licensees {
+  position: relative;
+  margin-bottom: 60px;
+}
+.licensees__list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+.licensees__list li {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #003057;
+}
+.licensees__title__h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003057;
+  line-height: 125%;
+  margin-bottom: 10px;
+}
+.licensees__title__h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #003057;
+  line-height: 125%;
+}
+
+@media (max-width: 1200px) {
+  .about_contint__title__h3 {
+    font-size: 1.375rem;
+  }
+  .licensees__list li {
+    padding-bottom: 10px;
+  }
+  .licensees__list {
+    grid-gap: 10px;
+  }
+}
 body {
   font-family: "Gotham Pro", sans-serif;
   box-sizing: border-box;
@@ -5453,6 +5527,24 @@ textarea, input[type=date i] {
   max-width: 1320px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.headerTom {
+  position: relative;
+  margin-top: 45px;
+}
+.headerTom h2 {
+  background-color: #25B2D3;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  font-size: 20px;
+  line-height: 135%;
+  color: #EBEFF2;
 }
 
 .oneId__item {
@@ -5518,10 +5610,9 @@ textarea, input[type=date i] {
   min-width: 450px;
 }
 .header__logo {
-  width: 70px;
+  width: 160px;
   height: 70px;
   position: relative;
-  margin-right: 20px;
 }
 .header__logo img {
   width: 100%;
@@ -5529,20 +5620,7 @@ textarea, input[type=date i] {
   object-fit: contain;
 }
 .header__logo img {
-  width: 70px;
-}
-.header__logo::after {
-  content: "";
-  display: block;
-  background-image: url(../foto/logo_left.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
-  width: 2px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: -20px;
+  object-position: center center;
 }
 .header__text__top {
   font-size: 16px;
@@ -5835,7 +5913,7 @@ textarea, input[type=date i] {
 }
 .slader__list {
   width: 70%;
-  flex: 0 0 70%;
+  flex: 1 0 70%;
 }
 .slader__list .slick-dots {
   display: flex !important;
@@ -6291,7 +6369,7 @@ textarea, input[type=date i] {
   font-size: 2.5rem;
   font-weight: 700;
   color: #003057;
-  line-height: 110%;
+  line-height: 140%;
   text-transform: uppercase;
 }
 .election__list {
@@ -6324,7 +6402,7 @@ textarea, input[type=date i] {
   object-fit: cover;
 }
 .election__img img {
-  object-position: center center;
+  object-position: center top;
 }
 .election__title__h3 {
   font-size: 1.5rem;
@@ -6399,6 +6477,9 @@ textarea, input[type=date i] {
   height: 100%;
   object-fit: cover;
 }
+.news__img img {
+  object-position: center;
+}
 .news__data {
   font-size: 0.75rem;
   font-weight: 400;
@@ -6437,6 +6518,9 @@ textarea, input[type=date i] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.news__img__top img {
+  object-position: center;
 }
 .news__item__bottom {
   width: 100%;
@@ -7003,6 +7087,7 @@ textarea, input[type=date i] {
   align-items: center;
   margin-top: 40px;
   grid-gap: 30px;
+  flex-wrap: wrap;
 }
 .footer__contact__link {
   background-color: #1A4568;
@@ -7241,7 +7326,8 @@ textarea, input[type=date i] {
 .yosh_saylovchi_darslari__cart,
 .saylov_blogi_in__cart,
 .saylov_blogi__cart,
-.search__cart {
+.search__cart,
+.licensees__cart {
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -7266,7 +7352,7 @@ textarea, input[type=date i] {
   }
   .slader__list {
     width: 60%;
-    flex: 0 0 60%;
+    flex: 1 0 60%;
   }
   .slader__hour {
     width: 40%;
@@ -7331,7 +7417,8 @@ textarea, input[type=date i] {
 .yosh_saylovchi_darslari,
 .saylov_blogi_in,
 .saylov_blogi,
-.search {
+.search,
+.licensees {
     margin-bottom: 40px;
   }
   .useful_links__cart {
@@ -7556,7 +7643,8 @@ textarea, input[type=date i] {
 .yosh_saylovchi_darslari__cart,
 .saylov_blogi_in__cart,
 .saylov_blogi__cart,
-.search__cart {
+.search__cart,
+.licensees__cart {
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -7789,7 +7877,7 @@ textarea, input[type=date i] {
   }
   .slader__list {
     width: 55%;
-    flex: 0 0 55%;
+    flex: 1 0 55%;
   }
   .slader__hour {
     width: 45%;
@@ -8014,6 +8102,9 @@ textarea, input[type=date i] {
   .services__list {
     grid-template-columns: repeat(1, 1fr);
   }
+  .header__text__top {
+    font-size: 0.75rem;
+  }
 }
 @media (max-width: 480px) {
   .slader__item {
@@ -8116,7 +8207,8 @@ textarea, input[type=date i] {
 .yosh_saylovchi_darslari,
 .saylov_blogi_in,
 .saylov_blogi,
-.search {
+.search,
+.licensees {
     margin-bottom: 30px;
   }
   .election__title__h2 {
@@ -8129,6 +8221,12 @@ textarea, input[type=date i] {
   }
   .to_voters__item {
     flex-direction: initial;
+  }
+  .header__top__cart {
+    grid-gap: 15px;
+  }
+  .header__text__top {
+    width: min-content;
   }
   .election__title__h2 {
     font-size: 1.375rem;
@@ -8149,7 +8247,7 @@ textarea, input[type=date i] {
   }
   .header__input__form {
     background-color: #003057;
-    width: auto;
+    width: 100%;
   }
   .header__top__form {
     padding: 0 30px;
